@@ -11,7 +11,6 @@ In this section, we build on top of our base EKS cluster from [Section-07](../..
 
 ![Automate Deployment of EKS addons using Terraform](../images/13_EKS_Cluster_with_AddOns.png)
 
-
 ---
 
 ## **Step-01: Project Overview**
@@ -94,37 +93,34 @@ This project enhances our base EKS setup [from Section-07](../../07_Terraform_EK
 
 ```
 
-
 ### **Execution Flow (In Order)**
 
 1. **Stage-1 → VPC**
 
-   * Run automatically via `create-cluster.sh`
-   * Provisions VPC, subnets, NATs, and outputs network IDs
+   - Run automatically via `create-cluster.sh`
+   - Provisions VPC, subnets, NATs, and outputs network IDs
 
 2. **Stage-2 → EKS Cluster + AddOns**
 
-   * Uses VPC outputs from remote state
-   * Builds EKS Cluster, NodeGroups, IAM roles
-   * Installs:
+   - Uses VPC outputs from remote state
+   - Builds EKS Cluster, NodeGroups, IAM roles
+   - Installs:
 
-     * `EKS Pod Identity Agent`
-     * `AWS Load Balancer Controller`
-     * `Amazon EBS CSI Driver`
-     * `Secrets Store CSI Driver + ASCP`
+     - `EKS Pod Identity Agent`
+     - `AWS Load Balancer Controller`
+     - `Amazon EBS CSI Driver`
+     - `Secrets Store CSI Driver + ASCP`
 
 3. **Post-Deploy**
 
-   * Update kubeconfig
-   * Verify add-on pods under `kube-system`
-   * Confirm IAM Pod Identity associations
+   - Update kubeconfig
+   - Verify add-on pods under `kube-system`
+   - Confirm IAM Pod Identity associations
 
 4. **Teardown**
 
-   * Run `destroy-cluster.sh`
-   * Destroys EKS first, then VPC
-
-
+   - Run `destroy-cluster.sh`
+   - Destroys EKS first, then VPC
 
 ---
 
@@ -141,10 +137,10 @@ Before deploying, explore how each component works.
 
 Each add-on’s `.tf` files include:
 
-* IAM policy & role
-* Pod Identity Association
-* AddOn or Helm installation
-* Outputs for verification
+- IAM policy & role
+- Pod Identity Association
+- AddOn or Helm installation
+- Outputs for verification
 
 ---
 
@@ -152,6 +148,7 @@ Each add-on’s `.tf` files include:
 
 Before running any Terraform commands, make sure you update the **S3 backend configuration** in your `terraform` block.
 Each stage (VPC and EKS) uses its own remote state path.
+
 - **File-1:** [01_VPC_terraform-manifests/c1-versions.tf](./01_VPC_terraform-manifests/c1-versions.tf)
 - **File-2:** [02_EKS_terraform-manifests_with_addons/c1-versions.tf](./02_EKS_terraform-manifests_with_addons/c1_versions.tf)
 
@@ -170,7 +167,7 @@ terraform {
 
   # Remote Backend Configuration
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"     # 🔹 Update your S3 bucket name
+    bucket         = "tfstate-dev-us-east-1-tvw0j4"     # 🔹 Update your S3 bucket name
     key            = "vpc/dev/terraform.tfstate"        # 🔹 Update key path (vpc/dev or eks/dev)
     region         = "us-east-1"                        # 🔹 Update region if required
     encrypt        = true
@@ -185,17 +182,18 @@ provider "aws" {
 
 🧠 **Why:**
 Terraform uses the S3 bucket to store and manage the remote state securely.
-* Update the **`bucket`** name as per your environment
-* Update the **`key`** path (e.g., `vpc/staging/terraform.tfstate` or `eks/prod/terraform.tfstate`)
 
+- Update the **`bucket`** name as per your environment
+- Update the **`key`** path (e.g., `vpc/staging/terraform.tfstate` or `eks/prod/terraform.tfstate`)
 
 ---
 
 ## **Step-05: Provision the EKS Cluster**
 
 ### Step-05-01: Create VPC
+
 ```bash
-# Change Directory 
+# Change Directory
 cd 01_VPC_terraform-manifests
 
 # Initialize Terraform
@@ -207,14 +205,14 @@ terraform validate
 # Preview the plan
 terraform plan
 
-# Apply configuration 
+# Apply configuration
 terraform apply -auto-approve
 ```
 
-
 ### Step-05-02: Create EKS Cluster
+
 ```bash
-# Change Directory 
+# Change Directory
 cd 02_EKS_terraform-manifests_with_addons
 
 # Initialize Terraform
@@ -226,13 +224,14 @@ terraform validate
 # Preview the plan
 terraform plan
 
-# Apply configuration 
+# Apply configuration
 terraform apply -auto-approve
 ```
 
 ---
 
 ## **Step-06: Configure kubectl**
+
 💡 **Tip:** It may take a few minutes for all add-on pods (especially ASCP and EBS CSI) to transition to `Running` state. Use `kubectl get pods -n kube-system -w` to watch in real time.
 
 ```bash
@@ -264,14 +263,13 @@ eks-pod-identity-agent-xxxxx                               1/1     Running   1m
 
 1. Navigate to **EKS → Add-ons**
 2. You’ll see:
-   * `eks-pod-identity-agent`
-   * `aws-ebs-csi-driver`
+   - `eks-pod-identity-agent`
+   - `aws-ebs-csi-driver`
 3. Under **Workloads → Pods (kube-system)**, verify:
 
-   * `aws-load-balancer-controller`
-   * `csi-secrets-store-*`
-   * `secrets-provider-aws-*`
-
+   - `aws-load-balancer-controller`
+   - `csi-secrets-store-*`
+   - `secrets-provider-aws-*`
 
 ---
 
@@ -291,4 +289,3 @@ This setup ensures your **EKS cluster is fully production-ready**, integrating s
 🎯 **You have now successfully provisioned an enhanced EKS cluster with all essential AWS AddOns!**
 
 ---
-

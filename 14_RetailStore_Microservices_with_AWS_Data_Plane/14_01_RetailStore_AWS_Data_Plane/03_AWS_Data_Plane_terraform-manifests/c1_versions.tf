@@ -7,16 +7,16 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = ">= 6.0"
-    }   
+    }
   }
 
   # Remote backend configuration using S3 
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"         
-    key            = "retail-persistent-endpoints/dev/terraform.tfstate"            
-    region         = "us-east-1"                            
-    encrypt        = true                                   
-    use_lockfile   = true     
+    bucket       = "tfstate-dev-us-east-1-tvw0j4"
+    key          = "retail-persistent-endpoints/dev/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
   }
 }
 
