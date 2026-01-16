@@ -88,14 +88,7 @@
         "subnet-0dbd5a10cb1321ac7",
         "subnet-0da909aad1487ae27"
       ],
-      "type": [
-        "tuple",
-        [
-          "string",
-          "string",
-          "string"
-        ]
-      ]
+      "type": ["tuple", ["string", "string", "string"]]
     },
     "public_subnet_ids": {
       "value": [
@@ -103,14 +96,7 @@
         "subnet-0864503996d17b671",
         "subnet-0fc0bf91f7bc8934f"
       ],
-      "type": [
-        "tuple",
-        [
-          "string",
-          "string",
-          "string"
-        ]
-      ]
+      "type": ["tuple", ["string", "string", "string"]]
     },
     "retailstore_db_secret_policy_arn": {
       "value": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
@@ -160,10 +146,7 @@
             "source_policy_documents": null,
             "statement": [
               {
-                "actions": [
-                  "sts:AssumeRole",
-                  "sts:TagSession"
-                ],
+                "actions": ["sts:AssumeRole", "sts:TagSession"],
                 "condition": [],
                 "effect": "Allow",
                 "not_actions": [],
@@ -171,9 +154,7 @@
                 "not_resources": [],
                 "principals": [
                   {
-                    "identifiers": [
-                      "pods.eks.amazonaws.com"
-                    ],
+                    "identifiers": ["pods.eks.amazonaws.com"],
                     "type": "Service"
                   }
                 ],
@@ -251,9 +232,7 @@
             "secret_string": "{\"username\":\"mydbadmin\",\"password\":\"kalyandb101\"}",
             "version_id": "03b7cd5f-6345-4056-ba0a-c1b93579c232",
             "version_stage": "AWSCURRENT",
-            "version_stages": [
-              "AWSCURRENT"
-            ]
+            "version_stages": ["AWSCURRENT"]
           },
           "sensitive_attributes": [
             [
@@ -285,7 +264,7 @@
             "backend": "s3",
             "config": {
               "value": {
-                "bucket": "tfstate-dev-us-east-1-jpjtof",
+                "bucket": "tfstate-dev-us-east-1-tvw0j4",
                 "key": "eks/dev/terraform.tfstate",
                 "region": "us-east-1"
               },
@@ -460,19 +439,11 @@
                   "private_node_group_name": "string",
                   "private_subnet_ids": [
                     "tuple",
-                    [
-                      "string",
-                      "string",
-                      "string"
-                    ]
+                    ["string", "string", "string"]
                   ],
                   "public_subnet_ids": [
                     "tuple",
-                    [
-                      "string",
-                      "string",
-                      "string"
-                    ]
+                    ["string", "string", "string"]
                   ],
                   "to_configure_kubectl": "string",
                   "vpc_id": "string"
@@ -498,7 +469,7 @@
             "backend": "s3",
             "config": {
               "value": {
-                "bucket": "tfstate-dev-us-east-1-jpjtof",
+                "bucket": "tfstate-dev-us-east-1-tvw0j4",
                 "key": "vpc/dev/terraform.tfstate",
                 "region": "us-east-1"
               },
@@ -536,19 +507,11 @@
                 {
                   "private_subnet_ids": [
                     "tuple",
-                    [
-                      "string",
-                      "string",
-                      "string"
-                    ]
+                    ["string", "string", "string"]
                   ],
                   "public_subnet_ids": [
                     "tuple",
-                    [
-                      "string",
-                      "string",
-                      "string"
-                    ]
+                    ["string", "string", "string"]
                   ],
                   "public_subnet_map": [
                     "object",
@@ -667,9 +630,7 @@
             "timezone": "",
             "upgrade_storage_config": null,
             "username": "mydbadmin",
-            "vpc_security_group_ids": [
-              "sg-003a837ed9de285f5"
-            ]
+            "vpc_security_group_ids": ["sg-003a837ed9de285f5"]
           },
           "sensitive_attributes": [
             [
@@ -804,9 +765,7 @@
             "timezone": "",
             "upgrade_storage_config": null,
             "username": "mydbadmin",
-            "vpc_security_group_ids": [
-              "sg-066c015d5fecd60dc"
-            ]
+            "vpc_security_group_ids": ["sg-066c015d5fecd60dc"]
           },
           "sensitive_attributes": [
             [
@@ -861,9 +820,7 @@
               "subnet-0dbd5a10cb1321ac7",
               "subnet-0fc257de21a3fb185"
             ],
-            "supported_network_types": [
-              "IPV4"
-            ],
+            "supported_network_types": ["IPV4"],
             "tags": {
               "Name": "retail-dev-rds-postgresql-subnet-group"
             },
@@ -875,9 +832,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.terraform_remote_state.vpc"
-          ]
+          "dependencies": ["data.terraform_remote_state.vpc"]
         }
       ]
     },
@@ -901,9 +856,7 @@
               "subnet-0dbd5a10cb1321ac7",
               "subnet-0fc257de21a3fb185"
             ],
-            "supported_network_types": [
-              "IPV4"
-            ],
+            "supported_network_types": ["IPV4"],
             "tags": {
               "Name": "retail-dev-rds-private-subnets"
             },
@@ -915,9 +868,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.terraform_remote_state.vpc"
-          ]
+          "dependencies": ["data.terraform_remote_state.vpc"]
         }
       ]
     },
@@ -1153,9 +1104,7 @@
             "preferred_outpost_arn": "",
             "region": "us-east-1",
             "replication_group_id": "",
-            "security_group_ids": [
-              "sg-036f773a930b3f4fd"
-            ],
+            "security_group_ids": ["sg-036f773a930b3f4fd"],
             "snapshot_arns": null,
             "snapshot_name": null,
             "snapshot_retention_limit": 0,
@@ -1208,9 +1157,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.terraform_remote_state.vpc"
-          ]
+          "dependencies": ["data.terraform_remote_state.vpc"]
         }
       ]
     },
@@ -1271,9 +1218,7 @@
             "arn": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy"
           },
           "private": "bnVsbA==",
-          "dependencies": [
-            "aws_sqs_queue.orders_sqs_queue"
-          ]
+          "dependencies": ["aws_sqs_queue.orders_sqs_queue"]
         }
       ]
     },
@@ -1304,9 +1249,7 @@
             "arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy"
           },
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.aws_caller_identity.current"
-          ]
+          "dependencies": ["data.aws_caller_identity.current"]
         }
       ]
     },
@@ -1351,9 +1294,7 @@
             "name": "retail-dev-cart-dynamodb-role"
           },
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.aws_iam_policy_document.assume_role"
-          ]
+          "dependencies": ["data.aws_iam_policy_document.assume_role"]
         }
       ]
     },
@@ -1398,9 +1339,7 @@
             "name": "retail-dev-catalog-getsecrets-role"
           },
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.aws_iam_policy_document.assume_role"
-          ]
+          "dependencies": ["data.aws_iam_policy_document.assume_role"]
         }
       ]
     },
@@ -1445,9 +1384,7 @@
             "name": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "private": "bnVsbA==",
-          "dependencies": [
-            "data.aws_iam_policy_document.assume_role"
-          ]
+          "dependencies": ["data.aws_iam_policy_document.assume_role"]
         }
       ]
     },
@@ -1583,9 +1520,7 @@
             "description": "Allow MySQL access from EKS cluster",
             "egress": [
               {
-                "cidr_blocks": [
-                  "0.0.0.0/0"
-                ],
+                "cidr_blocks": ["0.0.0.0/0"],
                 "description": "",
                 "from_port": 0,
                 "ipv6_cidr_blocks": [],
@@ -1605,9 +1540,7 @@
                 "ipv6_cidr_blocks": [],
                 "prefix_list_ids": [],
                 "protocol": "tcp",
-                "security_groups": [
-                  "sg-05bc97e69165e0219"
-                ],
+                "security_groups": ["sg-05bc97e69165e0219"],
                 "self": false,
                 "to_port": 3306
               }
@@ -1654,9 +1587,7 @@
             "description": "Allow RDS PostgreSQL access from EKS cluster",
             "egress": [
               {
-                "cidr_blocks": [
-                  "0.0.0.0/0"
-                ],
+                "cidr_blocks": ["0.0.0.0/0"],
                 "description": "",
                 "from_port": 0,
                 "ipv6_cidr_blocks": [],
@@ -1676,9 +1607,7 @@
                 "ipv6_cidr_blocks": [],
                 "prefix_list_ids": [],
                 "protocol": "tcp",
-                "security_groups": [
-                  "sg-05bc97e69165e0219"
-                ],
+                "security_groups": ["sg-05bc97e69165e0219"],
                 "self": false,
                 "to_port": 5432
               }
@@ -1725,9 +1654,7 @@
             "description": "Allow EKS cluster to access ElastiCache Redis",
             "egress": [
               {
-                "cidr_blocks": [
-                  "0.0.0.0/0"
-                ],
+                "cidr_blocks": ["0.0.0.0/0"],
                 "description": "",
                 "from_port": 0,
                 "ipv6_cidr_blocks": [],
@@ -1747,9 +1674,7 @@
                 "ipv6_cidr_blocks": [],
                 "prefix_list_ids": [],
                 "protocol": "tcp",
-                "security_groups": [
-                  "sg-05bc97e69165e0219"
-                ],
+                "security_groups": ["sg-05bc97e69165e0219"],
                 "self": false,
                 "to_port": 6379
               }
@@ -1837,4 +1762,3 @@
   ],
   "check_results": null
 }
-
