@@ -9,15 +9,19 @@
 ---
 
 ## [What are we going to learn?](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
+
 ![What are we going to learn?](./images//00_00_DevOps_Course_Introduction.png)
 
 ---
+
 ## [Course Details](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
+
 - **Title:** [Ultimate DevOps Real-World Project Implementation AWS Cloud](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 - **Sub Title:** ALL-IN-ONE: DevOps Implementation - Docker, Kubernetes (AWS EKS), Terraform, CI/CD (GitHub Actions, ArgoCD), Helm, OTEL
 - **Demos:** 55+ Hands-On Practical Demonstrations
 
 ---
+
 ## [Course Architecture Diagrams](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 
 All course concepts are explained with **interactive diagrams** (no PowerPoint slides). You can access them at below link
@@ -40,12 +44,14 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 - Contains [Retail Store Application Source Code](https://github.com/stacksimplify/aws-devops-github-actions-ecr-argocd3/tree/main/src)
 - Contains other supporting files
 
-
 ---
+
 ## [Course Modules - 55+ Hands-On Demos](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 
 ### **Section 1: Project Overview**
+
 **Module-01:** Complete Retail Store Microservices Architecture
+
 - Full-stack e-commerce application with 5 microservices
 - Multi-language stack (Java Spring Boot, Node.js, Go)
 - Production-grade architecture patterns
@@ -53,7 +59,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 2: Docker Commands (3 Demos)**
+
 **Module-02:** Docker Fundamentals and Essential Commands
+
 1. EC2 Docker Setup - Installing Docker on AWS Amazon Linux 2023
 2. Pull from Docker Hub and Run Containers
 3. Build Docker Images and Push to DockerHub
@@ -64,7 +72,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 3: Dockerfile Mastery (1 Comprehensive Demo)**
+
 **Module-03:** Building Custom Docker Images
+
 - **Dockerfile Instructions:** `FROM`, `LABEL`, `COPY`, `ADD`, `ARG`, `ENV`, `RUN`, `EXPOSE`, `CMD`, `ENTRYPOINT`, `WORKDIR`, `HEALTHCHECK`, `USER`
 - Security best practices
 - Multi-stage builds for optimization
@@ -73,7 +83,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 4: Docker Compose (1 Comprehensive Demo)**
+
 **Module-04:** Multi-Container Application Orchestration
+
 - Docker Compose basics with real microservices
 - Named volumes, networks, and health checks
 - Scaling services with DEPLOY
@@ -83,7 +95,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 5: Docker BuildKit (1 Comprehensive Demo)**
+
 **Module-05:** Advanced Docker Builds
+
 - Docker BuildKit and `buildx` CLI
 - Building multi-platform images (AMD64, ARM64)
 - Multi-stage builds for production optimization
@@ -91,7 +105,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 6: Terraform Basics (7 Demos)**
+
 **Module-06:** Infrastructure as Code Fundamentals
+
 1. Terraform Tools Installation (AWS CLI, Terraform, kubectl)
 2. Terraform Foundation - Providers, Resources, Variables, Outputs
 3. Build Production VPC with Public/Private Subnets
@@ -104,7 +120,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 7: Terraform EKS Cluster (1 Comprehensive Demo)**
+
 **Module-07:** Complete AWS EKS Cluster with Terraform
+
 - EKS cluster provisioning
 - EKS node groups configuration
 - IAM roles for EKS cluster and worker nodes
@@ -114,7 +132,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 8: Kubernetes Foundation (5 Demos)**
+
 **Module-08:** Kubernetes Core Concepts
+
 1. Kubernetes Pods - Creating and Managing
 2. Kubernetes Deployments - Declarative Updates
 3. Kubernetes Services - ClusterIP
@@ -125,7 +145,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 9: Kubernetes Secrets (4 Demos)**
+
 **Module-09:** Secrets Management
+
 1. Kubernetes Secrets Basics
 2. EKS Pod Identity Agent Setup
 3. AWS Secrets Manager Driver Installation
@@ -137,7 +159,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 10: Kubernetes Persistent Storage (3 Demos)**
+
 **Module-10:** Storage and Databases
+
 1. AWS EBS CSI Driver Installation
 2. EBS CSI Integration with Catalog Service
 3. AWS RDS MySQL Production Database Integration
@@ -148,7 +172,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 11: Kubernetes Ingress (3 Demos)**
+
 **Module-11:** Load Balancing and Ingress
+
 1. AWS Load Balancer Controller Installation
 2. Kubernetes Ingress with HTTP
 3. Kubernetes Ingress with HTTPS/SSL
@@ -159,7 +185,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 12: Helm Package Manager (5 Demos)**
+
 **Module-12:** Kubernetes Application Management
+
 1. Helm Basics - Installation and Fundamentals
 2. Helm Custom Values - Customization and Overrides
 3. Helm Chart Exploration - Understanding Chart Structure
@@ -169,7 +197,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 13: Terraform EKS Cluster with Add-Ons (1 Comprehensive Demo)**
+
 **Module-13:** Production-Ready EKS with Add-Ons
+
 - AWS Load Balancer Controller Add-On
 - EBS CSI Driver Add-On
 - Pod Identity Agent Add-On
@@ -180,9 +210,11 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 14: Retail Store Microservices - AWS Data Plane (2 Demos)**
+
 **Module-14:** Real-World Microservices Deployment
 
 **1. Retail Store AWS Data Plane Setup**
+
 - AWS RDS for MySQL (Catalog Service Relational database)
 - Amazon ElastiCache for Redis (Checkout Service cache)
 - Amazon SQS for Messaging (Orders Service Message broker)
@@ -191,6 +223,7 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 - Terraform automation for AWS services
 
 **2. Microservices with AWS Data Plane Integration**
+
 - UI Service (Spring Boot)
 - Carts Service (Spring Boot + DynamoDB)
 - Catalog Service (Go + Amazon MySQL/RDS)
@@ -201,7 +234,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 15: Terraform EKS with External DNS (1 Comprehensive Demo)**
+
 **Module-15:** Automated DNS Management
+
 - External DNS Add-On installation with Terraform
 - Automatic DNS record creation in Route53
 - Custom domain configuration
@@ -210,7 +245,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 16: Retail Store with External DNS (1 Demo)**
+
 **Module-16:** Production DNS Setup
+
 - Retail Store application with custom domains
 - SSL certificate automation with ACM
 - Production DNS management
@@ -218,24 +255,29 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 17: Autoscaling - Karpenter (4 Demos)**
+
 **Module-17:** Pod-Driven Node Autoscaling
 
 **1. Karpenter Installation with Terraform**
+
 - Architecture deep dive
 - IAM roles and permissions
 - EventBridge and SQS for spot interruption handling
 
 **2. Karpenter On-Demand Instances**
+
 - NodePools and EC2NodeClass configuration
 - Right-sizing nodes for workloads
 - Node consolidation
 
 **3. Karpenter Spot Instances**
+
 - 70% cost savings with Spot
 - Spot NodePool configuration
 - Instance diversification strategy
 
 **4. Karpenter Spot Interruption Handling**
+
 - Understanding 2-minute Spot interruption warning
 - EventBridge → SQS → Karpenter flow
 - Graceful pod eviction and rescheduling
@@ -245,7 +287,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 18: Autoscaling - HPA (1 Comprehensive Demo)**
+
 **Module-18:** Horizontal Pod Autoscaler
+
 - Metrics Server installation
 - CPU-based and memory-based autoscaling
 - HPA + Karpenter integration (HPA scales pods, Karpenter scales nodes)
@@ -253,7 +297,9 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 19: Helm Retail Store with AWS Data Plane (1 Comprehensive Demo)**
+
 **Module-19:** Complete Helm Deployment
+
 - Deploying full retail store with Helm
 - Separate charts for each microservice
 - Managing AWS data plane services with Helm
@@ -263,13 +309,16 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 20: Observability - OpenTelemetry (4 Demos)**
+
 **Module-20:** Production Observability Stack
 
 **1. EKS Environment with ADOT (AWS Distro for OpenTelemetry)**
+
 - ADOT Operator installation
 - OTEL Collector architecture
 
 **2. OpenTelemetry Traces with AWS X-Ray**
+
 - Auto-instrumentation for Java Spring Boot
 - Auto-instrumentation for Node.js
 - Trace sampling and filtering
@@ -277,10 +326,12 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 - Service maps and trace analysis
 
 **3. OpenTelemetry Logs with CloudWatch**
+
 - Log aggregation and analysis
 - CloudWatch Insights queries
 
 **4. OpenTelemetry Metrics with AMP & AMG**
+
 - Amazon Managed Prometheus setup
 - Amazon Managed Grafana setup
 - Custom dashboards creation
@@ -289,25 +340,30 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ---
 
 ### **Section 21: DevOps CI/CD Pipeline (4 Demos)**
+
 **Module-21:** Complete CI/CD with GitOps
 
 **1. CI with GitHub Actions and AWS ECR**
+
 - GitHub Actions workflow fundamentals
 - Building Docker images
 - OIDC authentication (No access keys!)
 - Semantic versioning with Git tags
 
 **2. ArgoCD Installation**
+
 - Installing ArgoCD on EKS
 - ArgoCD architecture and components
 - GitOps principles
 
 **3. CD with ArgoCD and Helm**
+
 - Creating ArgoCD applications
 - Helm integration
 - Auto-sync and self-heal
 
 **4. Complete CI/CD Flow Testing**
+
 - Code commit → Build → Push to ECR → Update Helm values → ArgoCD deploys
 - End-to-end demonstration
 - Rollback strategies
@@ -317,77 +373,87 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 ## [DevOps Technologies & Tools Covered](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 
 ### **1. Docker & Containerization**
-   - Docker installation, commands, and lifecycle management
-   - Dockerfile instructions and multi-stage builds
-   - Docker Compose for multi-container applications
-   - Docker BuildKit and multi-platform images
-   - Container security and best practices
+
+- Docker installation, commands, and lifecycle management
+- Dockerfile instructions and multi-stage builds
+- Docker Compose for multi-container applications
+- Docker BuildKit and multi-platform images
+- Container security and best practices
 
 ### **2. Terraform Infrastructure as Code**
-   - Terraform fundamentals (providers, resources, variables, outputs)
-   - State management (local and remote with S3/DynamoDB)
-   - Terraform modules for reusability
-   - AWS VPC architecture
-   - EKS cluster provisioning
-   - EKS Add-Ons management
-   - AWS services automation (RDS, ElastiCache, DynamoDB, SQS)
+
+- Terraform fundamentals (providers, resources, variables, outputs)
+- State management (local and remote with S3/DynamoDB)
+- Terraform modules for reusability
+- AWS VPC architecture
+- EKS cluster provisioning
+- EKS Add-Ons management
+- AWS services automation (RDS, ElastiCache, DynamoDB, SQS)
 
 ### **3. Kubernetes on AWS EKS**
-   - Kubernetes core concepts (Pods, Deployments, Services)
-   - ConfigMaps and Secrets management
-   - Persistent Volumes and StatefulSets
-   - Ingress controllers and load balancing
-   - RBAC, namespaces, and resource requests and limits
-   - Liveness and readiness probes
+
+- Kubernetes core concepts (Pods, Deployments, Services)
+- ConfigMaps and Secrets management
+- Persistent Volumes and StatefulSets
+- Ingress controllers and load balancing
+- RBAC, namespaces, and resource requests and limits
+- Liveness and readiness probes
 
 ### **4. Helm Package Manager**
-   - Helm charts structure and templating
-   - Values files and overrides
-   - Chart dependencies and hooks
-   - Packaging, versioning, and publishing
-   - Managing complex applications
+
+- Helm charts structure and templating
+- Values files and overrides
+- Chart dependencies and hooks
+- Packaging, versioning, and publishing
+- Managing complex applications
 
 ### **5. Autoscaling**
-   - **Karpenter:** Pod-driven node autoscaling, On-Demand/Spot provisioning, node consolidation, spot interruption handling
-   - **HPA:** CPU/memory-based pod autoscaling, custom metrics
-   - Combined HPA + Karpenter strategy
+
+- **Karpenter:** Pod-driven node autoscaling, On-Demand/Spot provisioning, node consolidation, spot interruption handling
+- **HPA:** CPU/memory-based pod autoscaling, custom metrics
+- Combined HPA + Karpenter strategy
 
 ### **6. Observability - OpenTelemetry**
-   - AWS Distro for OpenTelemetry (ADOT)
-   - Distributed tracing with AWS X-Ray
-   - Logs aggregation with CloudWatch
-   - Metrics with Amazon Managed Prometheus
-   - Dashboards with Amazon Managed Grafana
-   - Auto-instrumentation for Java and Node.js
+
+- AWS Distro for OpenTelemetry (ADOT)
+- Distributed tracing with AWS X-Ray
+- Logs aggregation with CloudWatch
+- Metrics with Amazon Managed Prometheus
+- Dashboards with Amazon Managed Grafana
+- Auto-instrumentation for Java and Node.js
 
 ### **7. CI/CD Pipeline**
-   - GitHub Actions for continuous integration
-   - Docker image building and multi-arch support
-   - Amazon ECR integration
-   - OIDC authentication
-   - ArgoCD for GitOps-based deployment
-   - Automated rollouts and rollbacks
+
+- GitHub Actions for continuous integration
+- Docker image building and multi-arch support
+- Amazon ECR integration
+- OIDC authentication
+- ArgoCD for GitOps-based deployment
+- Automated rollouts and rollbacks
 
 ### **8. AWS Services Integration**
-   - Amazon EKS, VPC, Load Balancer Controller
-   - RDS (MySQL), ElastiCache (Redis), DynamoDB, SQS
-   - Secrets Manager, X-Ray, CloudWatch
-   - Amazon Managed Prometheus, Amazon Managed Grafana
-   - ECR, Route53, Certificate Manager
+
+- Amazon EKS, VPC, Load Balancer Controller
+- RDS (MySQL), ElastiCache (Redis), DynamoDB, SQS
+- Secrets Manager, X-Ray, CloudWatch
+- Amazon Managed Prometheus, Amazon Managed Grafana
+- ECR, Route53, Certificate Manager
 
 ### **9. Real-World Microservices Application**
-   - 5-microservice e-commerce application
-   - Multi-language (Java Spring Boot, Node.js, Go)
-   - Service-to-service communication
-   - Database integration (MySQL, DynamoDB, Redis)
-   - Message queuing with SQS
+
+- 5-microservice e-commerce application
+- Multi-language (Java Spring Boot, Node.js, Go)
+- Service-to-service communication
+- Database integration (MySQL, DynamoDB, Redis)
+- Message queuing with SQS
 
 ### **10. Production Best Practices**
-   - Security: RBAC, Secrets Management, IMDSv2
-   - Cost Optimization: Spot instances (70% savings), node consolidation
-   - High Availability: Multi-AZ, PodDisruptionBudgets
-   - Monitoring and alerting
-   - GitOps workflows
+
+- Security: RBAC, Secrets Management, IMDSv2
+- Cost Optimization: Spot instances (70% savings), node consolidation
+- High Availability: Multi-AZ, PodDisruptionBudgets
+- Monitoring and alerting
+- GitOps workflows
 
 ---
 
@@ -398,12 +464,14 @@ Section-21 is a **DevOps CICD** section which has a dedicated repo for implement
 This comprehensive AWS DevOps course teaches **20 core competencies** through **88 hands-on skills** spanning Docker, Kubernetes, Terraform, CI/CD, observability, and production-ready practices.
 
 **Choose your view:**
+
 - 📋 [Quick Overview](#quick-overview) - 20 core competencies (2-min read)
 - 📚 [Detailed Curriculum](#detailed-curriculum) - 88 hands-on skills (complete breakdown)
 
 ---
 
 <a name="quick-overview"></a>
+
 ### **📋 Quick Overview: 20 Core Competencies**
 
 <details>
@@ -483,6 +551,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ---
 
 <a name="detailed-curriculum"></a>
+
 ### **📚 Detailed Curriculum: 88 Hands-On Skills**
 
 <details>
@@ -637,7 +706,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ### **💡 What Makes This Course Unique?**
 
 - **Production-First Approach**: Every concept includes real-world production patterns, not just theory
-- **Multi-Language Support**: Learn to deploy both Java Spring Boot and Node.js applications  
+- **Multi-Language Support**: Learn to deploy both Java Spring Boot and Node.js applications
 - **Cost Optimization Focus**: Achieve 70% savings with Spot instances and right-sizing strategies
 - **Complete Microservices Project**: 5-service retail store with AWS integrations (RDS, ElastiCache, DynamoDB, SQS)
 - **Modern DevOps Stack**: Latest tools (Karpenter, OpenTelemetry, ArgoCD) replacing legacy approaches
@@ -648,6 +717,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ## [What are the requirements or prerequisites for taking your course?](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 
 ### **Required Prerequisites:**
+
 - **AWS Account:** Active AWS account with permissions to create resources (EKS, VPC, RDS, EC2, etc.). Free tier works for initial modules.
 - **Computer:** System capable of running SSH and web browsers (any OS: Windows, macOS, Linux). We'll use EC2 for Docker demos, so no need for Docker Desktop locally.
 - **Basic Command Line:** Familiarity with terminal/command prompt and basic Linux commands.
@@ -655,12 +725,14 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 - **Internet Connection:** Stable connection for AWS console access and downloading tools.
 
 ### **Helpful (But Not Mandatory):**
+
 - **Basic Programming:** Understanding of basic programming concepts helps with microservices code, but not required.
 - **AWS Basics:** Familiarity with core AWS concepts (EC2, VPC, IAM) is helpful but we cover what's needed.
 - **Version Control:** Basic Git knowledge beneficial for CI/CD section.
 - **Networking Fundamentals:** Understanding of IP addresses, subnets, and ports enhances learning.
 
 ### **What You DON'T Need:**
+
 - **Prior Docker Experience:** We start from Docker installation and build to advanced concepts.
 - **Prior Kubernetes Experience:** We cover Kubernetes fundamentals before advanced topics.
 - **Prior Terraform Experience:** We begin with Terraform basics and gradually advance.
@@ -668,6 +740,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 - **Certifications:** No AWS or Kubernetes certifications required.
 
 ### **Tools We'll Install Together:**
+
 - AWS CLI
 - Terraform
 - kubectl
@@ -676,12 +749,14 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 - Various VS Code extensions
 
 ### **Cost Expectations:**
+
 - Some AWS services used are not in free tier
 - We optimize for cost throughout and provide cleanup instructions
 - **Estimated cost:** $20-$50 if you complete entire course and clean up resources after each section
 - **Pro tip:** Use `t3.large` instances (cheaper) and always clean up when not actively learning
 
 ### **Time Commitment:**
+
 - **Course Duration:** 55+ practical demos
 - **Recommended:** 2-3 demos per day at your own pace
 - **Completion Time:** 3-4 weeks with consistent practice
@@ -692,6 +767,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ## [Who is this course for?](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
 
 ### **Perfect For:**
+
 - **DevOps Engineers** wanting to master modern tools (Docker, Kubernetes, Terraform, CI/CD) on AWS
 - **Software Developers** looking to understand containerization and cloud-native development
 - **System Administrators** transitioning to DevOps and cloud infrastructure
@@ -702,6 +778,7 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 - **Engineering Managers** understanding modern DevOps workflows and tools
 
 ### **Ideal If You Want To:**
+
 - Build production-ready Kubernetes clusters on AWS from scratch
 - Master Infrastructure as Code with Terraform
 - Implement cost-effective autoscaling (70% savings with Spot instances)
@@ -712,12 +789,14 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 - Optimize AWS costs while maintaining high availability
 
 ### **Not Suitable For:**
+
 - Complete beginners with zero technical background (start with basic AWS/Linux courses)
 - Those seeking only theoretical knowledge without hands-on practice
 - People unwilling to invest minimal AWS costs for learning
 - Those looking for "quick certification shortcuts"
 
 ### **What Makes This Course Different:**
+
 - ✅ **Real Production Project:** Complete retail store with 5 microservices, not simplified examples
 - ✅ **55+ Hands-On Demos:** Every concept includes practical implementation
 - ✅ **Production-Grade:** Best practices throughout, no shortcuts or "hello world" demos
@@ -730,12 +809,14 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ---
 
 ## [GitHub Repository](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
+
 - **Main Repository:** [devops-real-world-project-implementation-on-aws](https://github.com/stacksimplify/devops-real-world-project-implementation-on-aws)
 - **Important:** Please FORK this repository to follow along and make your own changes during the course
 
 ---
 
 ## [Each of my courses comes with](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)
+
 - ✅ **55+ Hands-On Practical Demos** - Step-by-step implementations
 - ✅ **Real-World Project** - Production-grade retail store microservices
 - ✅ **Architecture Diagrams** - Visual explanations for every concept
@@ -752,21 +833,27 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ## My Other AWS Courses
 
 ### [AWS EKS - Elastic Kubernetes Service - Masterclass](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
+
 [![Image](https://stacksimplify.com/course-images/AWS-EKS-Kubernetes-Masterclass-DevOps-Microservices-course.png "AWS EKS Kubernetes - Masterclass")](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
 
 ### [Terraform on AWS with SRE & IaC DevOps | Real-World 20 Demos](https://links.stacksimplify.com/terraform-on-aws-with-sre-and-iacdevops)
+
 [![Image](https://stacksimplify.com/course-images/terraform-on-aws-best-seller.png "Terraform on AWS with SRE & IaC DevOps")](https://links.stacksimplify.com/terraform-on-aws-with-sre-and-iacdevops)
 
 ### [Terraform on AWS EKS Kubernetes IaC SRE - 50 Real-World Demos](https://links.stacksimplify.com/terraform-on-aws-eks-kubernetes-iac-sre)
+
 [![Image](https://stacksimplify.com/course-images/terraform-on-aws-eks-kubernetes.png "Terraform on AWS EKS Kubernetes IaC SRE")](https://links.stacksimplify.com/terraform-on-aws-eks-kubernetes-iac-sre)
 
 ### [HashiCorp Certified: Terraform Associate - 50 Practical Demos](https://links.stacksimplify.com/hashicorp-certified-terraform-associate)
+
 [![Image](https://stacksimplify.com/course-images/hashicorp-certified-terraform-associate-highest-rated.png "HashiCorp Certified: Terraform Associate")](https://links.stacksimplify.com/hashicorp-certified-terraform-associate)
 
 ### [Helm Masterclass: 50 Practical Demos for Kubernetes DevOps](https://links.stacksimplify.com/helm-masterclass-kubernetes-devops)
+
 [![Image](https://stacksimplify.com/course-images/helm-masterclass-kubernetes-devops.png "Helm Masterclass")](https://links.stacksimplify.com/helm-masterclass-kubernetes-devops)
 
 ### [Docker in a Weekend: 40 Practical Demos for DevOps Learners](https://links.stacksimplify.com/docker-in-a-weekend-40-practical-demos-for-devops)
+
 [![Image](https://stacksimplify.com/course-images/docker-in-a-weekend.png "Docker in a Weekend")](https://links.stacksimplify.com/docker-in-a-weekend-40-practical-demos-for-devops)
 
 ---
@@ -774,12 +861,15 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ## My Azure Courses
 
 ### [Azure Kubernetes Service with Azure DevOps and Terraform](https://www.udemy.com/course/azure-kubernetes-service-with-azure-devops-and-terraform/?referralCode=2499BF7F5FAAA506ED42)
+
 [![Image](https://stacksimplify.com/course-images/azure-kubernetes-service-with-azure-devops-and-terraform.png "Azure Kubernetes Service with Azure DevOps and Terraform")](https://www.udemy.com/course/azure-kubernetes-service-with-azure-devops-and-terraform/?referralCode=2499BF7F5FAAA506ED42)
 
 ### [Azure - HashiCorp Certified: Terraform Associate - 70 Demos](https://links.stacksimplify.com/azure-hashicorp-certified-terraform-associate)
+
 [![Image](https://stacksimplify.com/course-images/azure-hashicorp-certified-terraform-associate-highest-rated.png "Azure - HashiCorp Certified: Terraform Associate")](https://links.stacksimplify.com/azure-hashicorp-certified-terraform-associate)
 
 ### [Terraform on Azure with IaC DevOps and SRE | Real-World 25 Demos](https://links.stacksimplify.com/terraform-on-azure-with-iac-devops-sre)
+
 [![Image](https://stacksimplify.com/course-images/terraform-on-azure-with-iac-azure-devops-sre-1.png "Terraform on Azure with IaC DevOps and SRE")](https://links.stacksimplify.com/terraform-on-azure-with-iac-devops-sre)
 
 ---
@@ -787,29 +877,19 @@ This comprehensive AWS DevOps course teaches **20 core competencies** through **
 ## My GCP (Google Cloud) Courses
 
 ### [GCP Google Kubernetes Engine GKE with DevOps - 75 Real-World Demos](https://links.stacksimplify.com/gcp-google-kubernetes-engine-gke-with-devops)
+
 [![Image](https://stacksimplify.com/course-images/gcp-gke-with-devops.png "GCP GKE with DevOps")](https://links.stacksimplify.com/gcp-google-kubernetes-engine-gke-with-devops)
 
 ### [GCP Terraform on Google Cloud: DevOps SRE IaC - 30 Real-World Demos](https://links.stacksimplify.com/gcp-terraform-on-google-cloud-devops-sre-iac)
+
 [![Image](https://stacksimplify.com/course-images/gcp-terraform-devops-sre.png "GCP Terraform on Google Cloud")](https://links.stacksimplify.com/gcp-terraform-on-google-cloud-devops-sre-iac)
 
 ### [GCP Associate Cloud Engineer Google Certification - 150 Demos](https://links.stacksimplify.com/gcp-associate-cloud-engineer-google-certification)
+
 [![Image](https://stacksimplify.com/course-images/gcp-ace.png "GCP Associate Cloud Engineer")](https://links.stacksimplify.com/gcp-associate-cloud-engineer-google-certification)
 
 ### [GCP GKE Terraform on Google Kubernetes Engine DevOps SRE - 40 Demos](https://links.stacksimplify.com/gcp-gke-terraform-on-google-kubernetes-engine)
+
 [![Image](https://stacksimplify.com/course-images/gcp-gke-terraform.png "GCP GKE Terraform")](https://links.stacksimplify.com/gcp-gke-terraform-on-google-kubernetes-engine)
-
----
-
-## Stack Simplify Udemy Profile
-- [Udemy Profile - Kalyan Reddy](https://www.udemy.com/user/kalyan-reddy-9/)
-
----
-
-## Connect with Me
-- [YouTube - Cloud & DevOps Tutorials](https://www.youtube.com/@stacksimplify)
-- [LinkedIn - Kalyan Reddy](https://www.linkedin.com/in/kalyan-reddy/)
-- [GitHub - StackSimplify](https://github.com/stacksimplify)
-
----
 
 **Ready to master DevOps on AWS? [Enroll now!](https://www.udemy.com/course/aws-eks-kubernetes-karpenter-devops-production/?referralCode=2C03B4D7B09AC0C806A0)** 🚀

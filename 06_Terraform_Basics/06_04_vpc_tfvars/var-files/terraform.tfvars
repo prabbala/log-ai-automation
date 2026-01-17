@@ -10,9 +10,9 @@ subnet_newbits = 8
 
 # Tags 
 tags = {
-  Terraform   = "true"
-  Project     = "retail-store"
-  Owner       = "Kalyan Reddy Daida"
-  Course = "DevOps Real-world Implementation Project on AWS Cloud"
-  Demo = "terraform.tfvars demo"
+  Terraform = "true"
+  Project   = "retail-store"
+  Owner     = "Prab Balasubramanian"
+  Course    = "DevSecOps DeCMMC AI Automation Project on AWS Cloud"
+  Demo      = "terraform.tfvars demo"
 }

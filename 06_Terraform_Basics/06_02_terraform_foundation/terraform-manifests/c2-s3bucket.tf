@@ -1,8 +1,8 @@
 # Resouruce Block: Random String
 resource "random_string" "suffix" {
-  length = 6
+  length  = 6
   special = false
-  upper = false
+  upper   = false
 }
 
 # Resource Block: AWS S3 Bucket
@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "demo_bucket" {
   tags = {
     Name        = "DevOps Demo Bucket"
     Environment = "Dev"
-    # Owner = "Kalyan Reddy"
+    # Owner = "Prab Balasubramanian"
     # Organization = "StackSimplify"
   }
 }
