@@ -6,7 +6,7 @@
 ![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen)
 ![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9C%94-blue)
 
-> ⚠️ *This module is not yet published on the Terraform Registry.*  
+> ⚠️ _This module is not yet published on the Terraform Registry._  
 > To use it, reference it locally or within your own GitHub repo.
 
 ---
@@ -23,13 +23,13 @@
 
 ## File Structure
 
-| File                        | Purpose |
-|-----------------------------|---------|
+| File                        | Purpose                                           |
+| --------------------------- | ------------------------------------------------- |
 | `main.tf`                   | Core resources: VPC, subnets, NAT gateway, routes |
-| `variables.tf`              | Input variables for customization |
-| `outputs.tf`                | Output values to expose module data |
-| `datasources-and-locals.tf` | AZ lookups and subnet CIDR logic |
-| `README.md`                 | Module usage and documentation |
+| `variables.tf`              | Input variables for customization                 |
+| `outputs.tf`                | Output values to expose module data               |
+| `datasources-and-locals.tf` | AZ lookups and subnet CIDR logic                  |
+| `README.md`                 | Module usage and documentation                    |
 
 ---
 
@@ -74,9 +74,10 @@ module "vpc_single_nat" {
 
 ## Author
 
-**Kalyan Reddy Daida**
+**Prab Balasubramanian**
 Stacksimplify | Udemy Instructor
 Course: *DevOps Real-world Project Implementation on AWS Cloud*
 
 ---
 
+```
