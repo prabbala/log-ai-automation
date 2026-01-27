@@ -1,0 +1,79 @@
+apiVersion: karpenter.sh/v1
+kind: NodePool
+metadata:
+  name: retail-store-nodepool
+spec:
+  # Resource limits
+  limits:
+    cpu: 20      # Total CPU across all nodes
+    memory: 80Gi # Total memory across all nodes
+  
+  # Disruption settings
+  disruption:
+    consolidationPolicy: WhenEmptyOrUnderutilized
+    consolidateAfter: 30s
+  
+  template:
+    spec:
+      # Node requirements
+      requirements:
+        - key: kubernetes.io/arch
+          operator: In
+          values: ["amd64"]
+        - key: kubernetes.io/os
+          operator: In
+          values: ["linux"]
+        - key: karpenter.sh/capacity-type
+          operator: In
+          values: ["on-demand", "spot"] # Mix for cost optimization
+        - key: karpenter.k8s.aws/instance-family
+          operator: In
+          values: ["t3", "t3a", "c5", "c5a", "r5", "r5a"]
+        - key: karpenter.k8s.aws/instance-size
+          operator: In
+          values: ["large", "xlarge", "2xlarge"]
+      
+      # Node class reference
+      nodeClassRef:
+        apiVersion: karpenter.k8s.aws/v1beta1
+        kind: EC2NodeClass
+        name: default-ec2nodeclass
+      
+      # Startup taints (optional)
+      startupTaints:
+        - key: "retail-store/initializing"
+          value: "true"
+          effect: NoSchedule
+---
+# Resource requests for your applications
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: resource-recommendations
+data:
+  microservices.yaml: |
+    resources:
+      requests:
+        cpu: 250m
+        memory: 256Mi
+      limits:
+        cpu: 500m
+        memory: 512Mi
+  
+  databases.yaml: |
+    resources:
+      requests:
+        cpu: 200m
+        memory: 256Mi
+      limits:
+        cpu: 500m
+        memory: 1Gi
+  
+  messaging.yaml: |
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
